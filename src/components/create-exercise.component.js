@@ -12,7 +12,7 @@ function CreateExercise(props) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/users')
+        axios.get('https://exercise-tracker-kaustubh.vercel.app/users')
             .then(response => {
                 if (response.data.length > 0) {
                     setUsers(response.data.map(user => user.username));

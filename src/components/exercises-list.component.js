@@ -20,7 +20,7 @@ function ExercisesList() {
     const [exercises, setExercises] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/exercises')
+        axios.get('https://exercise-tracker-kaustubh.vercel.app/exercises')
             .then(response => {
                 setExercises(response.data);
             })
