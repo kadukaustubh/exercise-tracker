@@ -17,7 +17,7 @@ function EditExercise(props) {
     useEffect(() => {
 
 
-        axios.get('http://localhost:5000/exercises/' + id)
+        axios.get('https://exercise-tracker-kaustubh.vercel.app/exercises/' + id)
             .then(response => {
                 setUsername(response.data.username);
                 setDescription(response.data.description);
