@@ -28,7 +28,7 @@ function ExercisesList() {
     }, [])
 
     function deleteExercise(id) {
-        axios.delete('http://localhost:5000/exercises/' + id)
+        axios.delete('https://exercise-tracker-kaustubh.vercel.app/exercises/' + id)
             .then(res => console.log(res.data))
             .catch(err => console.log(err));
 
